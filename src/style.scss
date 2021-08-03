@@ -1,0 +1,28 @@
+@import "../node_modules/normalize.css/normalize.css";
+
+// COLOR VARIABLES
+$color_bgc: black;
+$color_accent: rebeccapurple;
+$color_white: white;
+$color_grey: silver;
+
+// GLOBAL STYLE
+body {
+  font-size: 10px;
+  color: $color_white;
+}
+
+.pomodoro__background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $color_bgc;
+}
