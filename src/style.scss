@@ -1,4 +1,4 @@
-@import "../node_modules/normalize.css/normalize.css";
+@import "reset.scss";
 
 // COLOR VARIABLES
 $color_bgc: black;
@@ -6,9 +6,47 @@ $color_accent: rebeccapurple;
 $color_white: white;
 $color_grey: silver;
 
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Ubuntu&display=swap');
+
+$font-montserrat: 'Montserrat', sans-serif;
+$font-ubuntu: 'Ubuntu', sans-serif;
+
+.text {
+  &_large {
+    font-size: 4rem;
+    font-family: $font-montserrat;
+  }
+  &_medium {
+    font-size: 3rem;
+    font-family: $font-ubuntu;
+  }
+  &_small {
+    font-size: 2rem;
+    font-family: $font-montserrat;
+  }
+  &_xsmall {
+    font-size: 1.5rem;
+    font-family: $font-ubuntu;
+    font-weight: lighter;
+  }
+
+  &_accent-color {
+    color: $color_accent;
+  }
+  &_grey {
+    color: $color_grey;
+  }
+  &_white {
+    color: $color_white;
+  }
+}
+
 // GLOBAL STYLES
-body {
+html {
   font-size: 10px;
+}
+body {
   color: $color_white;
 }
 
